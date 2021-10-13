@@ -29,7 +29,7 @@
   font-size: 13px;
 }
 
-.login-form input[type=text], select {
+.login-form input[type=text], input[type=password], select {
   width: 100%;
   display: inline-block;
   border: 1px solid #a1a1a1;

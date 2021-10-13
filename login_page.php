@@ -27,7 +27,7 @@
       <!-- Input Password -->
       <div>
         <label for="input-password">Password</label>
-        <input type="text" id="input-password">
+        <input type="password" id="input-password">
       </div>
       <!-- Login Button -->
       <button type="submit">Login</button>
