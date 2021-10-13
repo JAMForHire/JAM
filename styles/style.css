@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Roboto&display=swap');
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navbar */
+nav {
+  background-color: #555;
+  overflow: hidden;
+  width: 100%;
+
+  /* Set flex so row */
+  display: flex;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+/* Defaul nav links */
+nav a {
+  /* Remove default link */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+/* Navbar right portion */
+nav div.right {
+  /* Shift info to the end of flex box */
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+/* Nav links hover */
+nav a:hover {
+  /* Lighten color on hover */
+  background-color: #ddd;
+  color: black;
+}
+
+/* Nav active links */
+nav a.active {
+  /* Once link is active show blue color */
+  background-color: #B585F8;
+  color: white;
+}
+
+
 .login {
   display: flex;
   justify-content: center;
