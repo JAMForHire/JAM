@@ -1,4 +1,4 @@
-var down = false;
+var down = true;
 
 window.onload = () => {
   document.getElementById('chevron').src = down ? "./Resources/assets/chevron_down.svg" : "./Resources/assets/chevron_right.svg"
