@@ -102,3 +102,10 @@ nav a.active {
   background-color: #c7a7f5;
   cursor: pointer;
 }
+
+.icon {
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+}
