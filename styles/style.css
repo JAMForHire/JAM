@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Roboto&display=swap');
 
-html, body {
+html,
+body {
   margin: 0px;
   padding: 0px;
 }
@@ -80,7 +81,9 @@ nav a.active {
   font-size: 13px;
 }
 
-.login-form input[type=text], input[type=password], select {
+.login-form input[type=text],
+input[type=password],
+select {
   width: 100%;
   display: inline-block;
   border: 1px solid #a1a1a1;
@@ -117,4 +120,8 @@ nav a.active {
 
 .bg-jam {
   background-color: #826d9f;
+}
+
+.custom-select {
+  height: 2.5em;
 }
