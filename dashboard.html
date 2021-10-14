@@ -5,12 +5,79 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="./scripts/chevron.js"></script>
   <title>JAM Dashboard</title>
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <!-- Maing Modal Content -->
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <!-- Heading -->
+          <h5 class="modal-title" id="modalTitle">Create JAM Jar</h5>
+        </div>
+        <!-- Body text -->
+        <div class="modal-body">
+          <h1 class="text-center mb-4">Opportunity Title</h1>
+          <form class="">
+            <!-- Company Input -->
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Company:</span>
+              </div>
+              <input type="text" id="company" class="form-control" placeholder="Enter company name">
+            </div>
+            <!-- Due Date Input -->
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Due Date:</span>
+              </div>
+              <input type="text" id="company" class="form-control" placeholder="mm/dd/yy">
+            </div>
+            <!-- Notes Input -->
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text pr-5">Notes:</span>
+              </div>
+              <textarea type="text" id="company" rows="5" class="form-control" placeholder="Enter notes"></textarea>
+            </div>
+            <!-- Application Link Input -->
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Link:</span>
+              </div>
+              <input type="text" id="company" class="form-control" placeholder="Application Link">
+            </div>
+            <!-- Progress Selection -->
+            <div class="input-group mb-4">
+              <div class="input-group-append">
+                <label class="input-group-text" for="time">Progress:</label>
+              </div>
+              <select id="time" class="custom-select text-left border-secondary border border-1 rounded text-secondary">
+                <option selected value="">Choose...</option>
+                <option value="1">Not Started</option>
+                <option value="2">In Progress</option>
+                <option value="3">Completed</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <!-- Buttons for closing -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <nav>
     <a class="active" href="./index.html">Home</a>
     <div class="right">
@@ -24,7 +91,9 @@
       <h1 class="h2">Opportunities</h1>
       <img class="icon" src="" id="chevron" alt="chevron" />
       <div class="d-flex justify-content-end w-100 h-25">
-        <img class="icon" src="./Resources/assets/add.svg" alt="add" />
+        <button type="button" class="bg-transparent border-0" data-toggle="modal" data-target="#modal">
+          <img class="icon" src="./Resources/assets/add.svg" alt="add" />
+        </button>
       </div>
     </div>
   </div>
