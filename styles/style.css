@@ -55,6 +55,10 @@ nav a.active {
   font-family: 'Roboto', 'Cyrillic', sans-serif;
 }
 
+.login {
+  height: 105vh;
+}
+
 .register {
   height: 140vh;
 }

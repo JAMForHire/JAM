@@ -10,32 +10,43 @@
   <title>Log into JAM</title>
 </head>
 
-<body class="login">
-  <div>
-    <!-- JAM Logo -->
-    <img src="Resources/assets/logo.png" width="250" height="250">
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a class="active" href="./index.html">Home</a>
+    <div class="right">
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./dashboard.html">Test</a>
+    </div>
+  </nav>
 
-    <h1>Log into your Account</h1>
+  <div class="login">
+    <div>
+      <!-- JAM Logo -->
+      <img src="Resources/assets/logo.png" width="250" height="250">
 
-    <!-- Login Form -->
-    <form class="login-form">
-      <!-- Input Email Address -->
-      <div>
-        <label for="input-email">Email Address</label>
-        <input type="text" id="input-email">
-      </div>
-      <!-- Input Password -->
-      <div>
-        <label for="input-password">Password</label>
-        <input type="password" id="input-password">
-      </div>
-      <!-- Login Button -->
-      <button type="submit">Login</button>
-    </form>
+      <h1>Log into your Account</h1>
 
-    <!-- Register Prompt -->
-    <h4>Don't have an account?</h4>
-    <a href="register.html"><b>Register →</b></a>
+      <!-- Login Form -->
+      <form class="login-form">
+        <!-- Input Email Address -->
+        <div>
+          <label for="input-email">Email Address</label>
+          <input type="text" id="input-email">
+        </div>
+        <!-- Input Password -->
+        <div>
+          <label for="input-password">Password</label>
+          <input type="password" id="input-password">
+        </div>
+        <!-- Login Button -->
+        <button type="submit">Login</button>
+      </form>
+
+      <!-- Register Prompt -->
+      <h4>Don't have an account?</h4>
+      <a href="register.html"><b>Register →</b></a>
+    </div>
   </div>
 </body>
 </html>
