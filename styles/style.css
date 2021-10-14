@@ -154,7 +154,10 @@ nav a.active {
 }
 
 /* Styling for Required Form Input Labels */
-
+.login-form .required:after {
+  content: " *";
+  color: red;
+}
 
 .icon {
   width: 30px;
