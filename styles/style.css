@@ -73,7 +73,13 @@ nav a.active {
   font-size: 14px;
 }
 
-.login-form {
+.login .login-form {
+  text-align: left;
+  width: 125%;
+  margin-left: -12.5%;
+}
+
+.register .login-form {
   text-align: left;
   width: 90%;
   margin-left: 5%;
