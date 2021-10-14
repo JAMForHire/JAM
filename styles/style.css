@@ -49,6 +49,34 @@ nav a.active {
   color: white;
 }
 
+/* Underline accent */
+div.accent {
+  /* Sizing */
+  width: 40%;
+  height: 2vh;
+
+  /* Border */
+  border-radius: 2.5em;
+
+  /* Color */
+  background-color: #B585F8;
+}
+
+.btn-jam {
+  background-color: #B585F8 !important;
+}
+
+.btn-jam:hover {
+  background-color: #8064A2 !important;
+}
+
+/* Chevron Styling */
+img.chevron {
+  /* Sizing */
+  width: 4%;
+  cursor: pointer;
+}
+
 .login, .register {
   display: flex;
   justify-content: center;
