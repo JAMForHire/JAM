@@ -109,3 +109,12 @@ nav a.active {
 
   cursor: pointer;
 }
+
+.h-full {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.bg-jam {
+  background-color: #826d9f;
+}
