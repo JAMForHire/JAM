@@ -49,48 +49,95 @@ nav a.active {
   color: white;
 }
 
-
-.login {
+.login, .register {
   display: flex;
   justify-content: center;
   text-align: center;
   font-family: 'Roboto', 'Cyrillic', sans-serif;
 }
 
-.login h1 {
+.login {
+  height: 105vh;
+}
+
+.register {
+  height: 140vh;
+}
+
+.login h1, .register h1 {
   margin-top: -3%;
 }
 
-.login h4 {
+.login h4, .register h4 {
   margin-bottom: 2%;
 }
 
-.login a {
+.login a, .register a {
   color: #55D5FF;
   text-decoration: none;
   font-size: 14px;
 }
 
-.login-form {
-  width: 125%;
+.login .login-form {
   text-align: left;
+  width: 125%;
   margin-left: -12.5%;
+}
+
+.register .login-form {
+  text-align: left;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.login-form .inline-fields {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.login-form .inline-fields div {
+  width: 45%;
 }
 
 .login-form label {
   font-size: 13px;
 }
 
-.login-form input[type=text],
-input[type=password],
-select {
+/* Styling for Form Input Fields*/
+.login-form input[type=text], input[type=password], input[type=date], select {
   width: 100%;
-  display: inline-block;
+  display: block;
   border: 1px solid #a1a1a1;
   margin: 1% 0 4% 0;
   height: 4vh;
 }
 
+/* Styling for Form Date Picker*/
+.login-form input[type=date]::-webkit-datetime-edit {
+  font-family: 'Roboto', 'Cyrillic', sans-serif;
+  padding: 1%;
+}
+
+/* Styling for Form File Upload */
+.login-form input[type=file] {
+  margin: 1% 0 4% 0;
+  font-family: 'Roboto', 'Cyrillic', sans-serif;
+}
+.login-form input[type=file]::-webkit-file-upload-button {
+  background-color: #B585F8;
+  color: white;
+  border: 2px solid #c7a7f3;
+  height: 4.25vh;
+}
+.login-form input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #9c73d6;
+}
+.login-form input[type=file]::-webkit-file-upload-button:active {
+  background-color: #8a65bd;
+}
+
+/* Styling for Form Submit Button*/
 .login-form button[type=submit] {
   width: 40%;
   margin: 5% 30%;
@@ -100,9 +147,8 @@ select {
   border: none;
   font-size: 20px;
 }
-
 .login-form button[type=submit]:hover {
-  background-color: #c7a7f5;
+  background-color: #be95f8;
   cursor: pointer;
 }
 
