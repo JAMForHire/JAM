@@ -132,6 +132,7 @@ nav a.active {
 }
 .login-form input[type=file]::-webkit-file-upload-button:hover {
   background-color: #9c73d6;
+  cursor: pointer;
 }
 .login-form input[type=file]::-webkit-file-upload-button:active {
   background-color: #8a65bd;
@@ -151,6 +152,9 @@ nav a.active {
   background-color: #be95f8;
   cursor: pointer;
 }
+
+/* Styling for Required Form Input Labels */
+
 
 .icon {
   width: 30px;
