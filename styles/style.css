@@ -212,3 +212,47 @@ img.chevron {
 .custom-select {
   height: 2.5em;
 }
+.box {
+  width:200px;
+  height:500px;
+  border:10px solid #ccc;
+  border-radius:10px;
+  line-height:200px;
+  text-align:center;
+  color:#ddd;
+  font-size:25px;
+  font-weight:600;
+  text-transform:uppercase;
+  position:relative;
+  overflow:hidden;
+}
+
+.water:before {
+  content:"";
+  position:absolute;
+  width:300px;
+  height:300px;
+  background:purple;
+  left:50%;
+  transform:translateX(-50%);
+  border-radius:40%;
+  animation:fill 7s ease-in;
+  z-index:-1;
+}
+
+@keyframes fill {
+  from {
+    top:500px;
+    transform:translateX(-50%) rotate(0deg);
+  }
+  to {
+    top:100px;
+    transform:translateX(-50%) rotate(360deg);
+  }
+  99.999% {
+    border-radius: 40%;
+  }
+  100% {
+    border-radius: 0%;
+  }
+}
