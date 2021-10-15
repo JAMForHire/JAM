@@ -96,6 +96,10 @@ nav a.active {
   margin-bottom: 2%;
 }
 
+.login-form .fix-margin {
+  margin-right: -1%;
+}
+
 .login-form .inline-fields div {
   width: 45%;
 }
@@ -111,6 +115,7 @@ nav a.active {
   border: 1px solid #a1a1a1;
   margin: 1% 0 4% 0;
   height: 4vh;
+  padding: 1%;
 }
 
 /* Styling for Form Date Picker*/
@@ -129,6 +134,7 @@ nav a.active {
   color: white;
   border: 2px solid #c7a7f3;
   height: 4.25vh;
+  border-radius: 10px;
 }
 .login-form input[type=file]::-webkit-file-upload-button:hover {
   background-color: #9c73d6;
