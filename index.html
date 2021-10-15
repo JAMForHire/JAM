@@ -14,16 +14,20 @@
   <title>JAM Homepage</title>
 </head>
 <body>
+  <!-- Navbar -->
   <nav>
     <a class="active" href="./index.html">Home</a>
     <div class="right">
+      <!-- Links -->
       <a href="./dashboard.html">Dashboard</a>
       <a href="./dashboard.html">Test</a>
     </div>
   </nav>
   
+  <!-- Hero section -->
   <section class="container col-xxl-16 px-4 py-5 ">
     <div class="row flex-lg-row align-items-center g-5 py-5">
+      <!-- Content -->
       <div class="col-lg-6 d-flex flex-column align-items-lg-start align-items-center">
         <h1 class="fw-bold display-1">JAM</h1>
         <div class="accent mb-2"></div>
@@ -34,10 +38,12 @@
           <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="redirect('login.html')">Login</button>
         </div>
       </div>
+      <!-- Logo -->
       <div class="col-lg-6 d-flex flex-row justify-content-center">
         <img src="./Resources/assets/logo.png" class="d-block mx-lg-auto img-fluid mb-5" alt="GNH Logo" width="450" height="450">
       </div>
     </div>
+    <!-- Chevron -->
     <a href="#about">
       <div class="d-flex justify-content-center">
         <img class="chevron" src="./Resources/assets/chevron_down.svg" alt="chevron"/>
@@ -45,10 +51,12 @@
     </a>
   </section>
 
+  <!-- About Section -->
   <section class="bg-jam text-center h-100 w-100 p-3 pb-5" id="about">
     <h2 class="display-2 text-white mb-4">About</h2>
     <div class="container pb-5">
       <div class="row">
+        <!-- Individual Section -->
         <div class="col-sm">
           <img class="main_img" src="./Resources/assets/undraw_organize.svg" alt="organized" />
           <h3>Stay Organized</h3>
@@ -57,6 +65,7 @@
             and can hold information about those specific opportunities.
           </div>
         </div>
+        <!-- Individual Section -->
         <div class="col-sm">
           <img class="main_img" src="./Resources/assets/undraw_time.svg" alt="organized" />
           <h3>Time is Key</h3>
@@ -66,6 +75,7 @@
             application deadline.
           </div>
         </div>
+        <!-- Individual Section -->
         <div class="col-sm">
           <img class="main_img_2" src="./Resources/assets/undraw_growth.svg" alt="organized" />
           <h3>Maximize Potential</h3>
@@ -79,8 +89,10 @@
     </div>
   </section>
 
+  <!-- Bottom Section -->
   <section class="d-flex flex-column align-items-center my-5">
     <h2 class="display-6 mb-5">Join Today!</h2>
+    <!-- Button row -->
     <div class="mt-1 mb-5 d-flex h-100 w-100 justify-content-center gap-5">
       <button type="button" class="btn btn-lg btn-jam text-white" onclick="redirect('./login.html')">Login</button>
       <button type="button" class="btn btn-lg btn-jam text-white" onclick="redirect('./register.html')">Register</button>
