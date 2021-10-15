@@ -45,6 +45,6 @@ function gen_modal(id) {
     document.getElementById('date').placeholder = "mm/dd/yy";
     document.getElementById('notes').placeholder = "Enter notes";
     document.getElementById('app_link').placeholder = "Enter app link";
-    document.getElementById('progress').value = 0;
+    document.getElementById('progress').value = "";
   }
 }
