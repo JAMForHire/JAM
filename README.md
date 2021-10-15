@@ -1,1 +1,1 @@
-# JAM
+# JAM - Midterm Presentation
