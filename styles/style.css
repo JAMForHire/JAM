@@ -282,6 +282,8 @@ img.chevron {
   text-transform:uppercase;
   position:relative;
   overflow:hidden;
+
+  cursor: pointer;
 }
 
 /* Jar filling 100% */
@@ -298,6 +300,8 @@ img.chevron {
   text-transform:uppercase;
   position:relative;
   overflow:hidden;
+
+  cursor: pointer;
 }
 
 /* Animate Jar for 50% */
