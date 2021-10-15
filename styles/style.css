@@ -171,52 +171,39 @@ nav a.active {
 .custom-select {
   height: 2.5em;
 }
-#container {
-    background: rgba( 0, 0, 0, 0.10);
-    margin-left:auto;
-    margin-right:auto;
-    width: 300px;
-    border-left: 1px solid #bbb;
-    border-right: 1px solid #bbb;
-    border-bottom: 1px solid #bbb;
-    border-top: 1px solid #ccc;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 30px;
-    padding-top: 5px;
+.box {
+  width:200px;
+  height:200px;
+  border:10px solid #ccc;
+  border-radius:10px;
+  line-height:200px;
+  text-align:center;
+  color:#ddd;
+  font-size:25px;
+  font-weight:600;
+  text-transform:uppercase;
+  position:relative;
+  overflow:hidden;
 }
-#glass {
-    background: rgba( 255, 255, 255, 0.50);
-    border: 1px solid #bbb;
-    border-top: 1px solid #eee;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    width: 300px;
-    height: 400px;
-    position: relative;
+.box:before {
+  content:"";
+  position:absolute;
+  width:400px;
+  height:400px;
+  background:purple;
+  left:50%;
+  transform:translateX(-50%);
+  border-radius:40%;
+  animation:fill 7s ease-in infinite;
+  z-index:-1;
 }
-#water {
-    background-image: url("waves.png");
-    background-position: top right;
-    position: absolute;
-    bottom: 0px;
-    width: 300px;
-    height: 100px;
-    -webkit-transition: all 3s ease-out;
-    -moz-transition: all 3s ease-out;
-    transition: all 3s ease-out;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}
-#glass:hover #water {
-    height: 40%;
-    background-position: top left;
-    -webkit-transition: all 3s ease-out;
-    -moz-transition: all 3s ease-out;
-    transition: all 3s ease-out;
+@keyframes fill {
+  from {
+    top:250px;
+    transform:translateX(-50%) rotate(0deg);
+  }
+  to {
+    top:-50px;
+    transform:translateX(-50%) rotate(360deg);
+  }
 }
