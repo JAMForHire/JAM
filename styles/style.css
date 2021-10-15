@@ -124,6 +124,10 @@ img.chevron {
   margin-bottom: 2%;
 }
 
+.login-form .fix-margin {
+  margin-right: -1%;
+}
+
 .login-form .inline-fields div {
   width: 45%;
 }
@@ -139,6 +143,7 @@ img.chevron {
   border: 1px solid #a1a1a1;
   margin: 1% 0 4% 0;
   height: 4vh;
+  padding: 1%;
 }
 
 /* Styling for Form Date Picker*/
@@ -157,9 +162,11 @@ img.chevron {
   color: white;
   border: 2px solid #c7a7f3;
   height: 4.25vh;
+  border-radius: 10px;
 }
 .login-form input[type=file]::-webkit-file-upload-button:hover {
   background-color: #9c73d6;
+  cursor: pointer;
 }
 .login-form input[type=file]::-webkit-file-upload-button:active {
   background-color: #8a65bd;
@@ -178,6 +185,12 @@ img.chevron {
 .login-form button[type=submit]:hover {
   background-color: #be95f8;
   cursor: pointer;
+}
+
+/* Styling for Required Form Input Labels */
+.login-form .required:after {
+  content: " *";
+  color: red;
 }
 
 .icon {
