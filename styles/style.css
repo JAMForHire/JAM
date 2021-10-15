@@ -173,7 +173,7 @@ nav a.active {
 }
 .box {
   width:200px;
-  height:200px;
+  height:500px;
   border:10px solid #ccc;
   border-radius:10px;
   line-height:200px;
@@ -189,21 +189,29 @@ nav a.active {
   content:"";
   position:absolute;
   width:400px;
-  height:400px;
+  height:500px;
   background:purple;
   left:50%;
   transform:translateX(-50%);
   border-radius:40%;
-  animation:fill 7s ease-in infinite;
+  animation: fill 5s ease-in;
+  animation-fill-mode: forwards;
   z-index:-1;
 }
+
 @keyframes fill {
   from {
-    top:250px;
+    top:500px;
     transform:translateX(-50%) rotate(0deg);
   }
   to {
-    top:-50px;
+    top:250px;
     transform:translateX(-50%) rotate(360deg);
+  }
+  99.999% {
+    border-radius: 40%;
+  }
+  100% {
+    border-radius: 0%;
   }
 }
