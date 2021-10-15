@@ -4,6 +4,8 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -82,6 +84,16 @@ img.chevron {
   justify-content: center;
   text-align: center;
   font-family: 'Roboto', 'Cyrillic', sans-serif;
+}
+
+.main_img {
+  width: 55%;
+  margin-bottom: 10%;
+}
+
+.main_img_2 {
+  width: 55%;
+  margin-bottom: 15%;
 }
 
 .login {
@@ -211,7 +223,9 @@ img.chevron {
 
 .custom-select {
   height: 2.5em;
+
 }
+
 .box {
   width:200px;
   height:500px;
@@ -242,12 +256,13 @@ img.chevron {
 
 @keyframes fill {
   from {
-    top:500px;
-    transform:translateX(-50%) rotate(0deg);
+    top: 300px;
+    transform: translateX(-50%) rotate(0deg);
   }
+
   to {
-    top:100px;
-    transform:translateX(-50%) rotate(360deg);
+    top: 100px;
+    transform: translateX(-50%) rotate(360deg);
   }
   99.999% {
     border-radius: 40%;
@@ -255,4 +270,18 @@ img.chevron {
   100% {
     border-radius: 0%;
   }
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+p.copyright {
+  line-height: 40px;
+  font-size: 1em;
+  padding-left: 1.5%;
 }
