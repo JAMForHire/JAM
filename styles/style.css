@@ -212,9 +212,10 @@ img.chevron {
 .custom-select {
   height: 2.5em;
 }
-.box {
-  width:200px;
-  height:500px;
+
+.jar {
+  width:300px;
+  height:300px;
   border:10px solid #ccc;
   border-radius:10px;
   line-height:200px;
@@ -227,32 +228,33 @@ img.chevron {
   overflow:hidden;
 }
 
-.water:before {
+.jar:before {
   content:"";
   position:absolute;
-  width:300px;
-  height:300px;
+  width:500px;
+  height:500px;
   background:purple;
   left:50%;
   transform:translateX(-50%);
   border-radius:40%;
-  animation:fill 7s ease-in;
+  animation:fill 7s steps(700);
+  animation-fill-mode: forwards;
   z-index:-1;
 }
 
 @keyframes fill {
   from {
-    top:500px;
+    top: 300px;
     transform:translateX(-50%) rotate(0deg);
   }
-  to {
-    top:100px;
+  90% {
+    top: 150px;
     transform:translateX(-50%) rotate(360deg);
-  }
-  99.999% {
     border-radius: 40%;
   }
   100% {
+    top: 150px;
+    transform:translateX(-50%) rotate(360deg);
     border-radius: 0%;
   }
 }
