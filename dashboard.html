@@ -10,6 +10,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./scripts/generate_model.js"></script>
   <script src="./scripts/chevron.js"></script>
   <title>JAM Dashboard</title>
 </head>
@@ -58,10 +60,10 @@
             <!-- Progress Selection -->
             <div class="input-group mb-4">
               <div class="input-group-append">
-                <label class="input-group-text" for="time">Progress:</label>
+                <label class="input-group-text" for="progress">Progress:</label>
               </div>
-              <select id="time" class="form-control custom-select text-left border-secondary border border-1 rounded text-secondary" required>
-                <option selected value="">Choose...</option>
+              <select id="progress" class="form-control custom-select text-left border-secondary border border-1 rounded text-secondary" required>
+                <option selected value="0">Choose...</option>
                 <option value="1">Not Started</option>
                 <option value="2">In Progress</option>
                 <option value="3">Completed</option>
@@ -95,7 +97,7 @@
       <h1 class="h2">Opportunities</h1>
       <img class="icon" src="#" id="chevron" alt="chevron" />
       <div class="d-flex justify-content-end w-100 h-25">
-        <button type="button" class="bg-transparent border-0" data-toggle="modal" data-target="#modal">
+        <button type="button" class="bg-transparent border-0" data-toggle="modal" data-target="#modal" onclick="gen_modal('0')">
           <img class="icon" src="./Resources/assets/add.svg" alt="add" />
         </button>
       </div>
@@ -104,15 +106,15 @@
     <!-- Jars -->
     <div class="d-flex gap-5 flex-column flex-lg-row">
       <!-- Jar -->
-      <div class="jar-50" data-toggle="modal" data-target="#modal">
+      <div id="jar_1" class="jar-50" data-toggle="modal" data-target="#modal" onclick="gen_modal('jar_1')">
         Company 1
       </div>
       <!-- Jar -->
-      <div class="jar-100" data-toggle="modal" data-target="#modal">
+      <div id="jar_2" class="jar-100" data-toggle="modal" data-target="#modal" onclick="gen_modal('jar_2')">
         Company 2
       </div>
       <!-- Jar -->
-      <div class="jar-100" data-toggle="modal" data-target="#modal">
+      <div id="jar_3" class="jar-100" data-toggle="modal" data-target="#modal" onclick="gen_modal('jar_3')">
         Company 3
       </div>
     </div>
